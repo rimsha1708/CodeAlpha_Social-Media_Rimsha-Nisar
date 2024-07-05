@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Social Network Platform</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#friends">Friends</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <h3>Username</h3>
+                <p>Bio: This is my official account :) .</p>
+                <input type="file" id="profilePicInput" accept="image/*">
+            </div>
+        </section>
+        <section id="posts">
+            <h2>Posts</h2>
+            <div class="new-post">
+                <textarea placeholder="What's on your mind?"></textarea>
+                <input type="file" id="mediaInput" accept="image/*,video/*">
+                <button id="postBtn">Post</button>
+            </div>
+            <div class="posts-list">
+                <!-- Posts will be dynamically added here -->
+            </div>
+        </section>
+        <section id="friends">
+            <h2>Friends</h2>
+            <div>
+                <input type="text" id="friendUsernameInput" placeholder="Enter friend's username">
+                <button id="sendFriendRequestBtn">Send Friend Request</button>
+            </div>
+            <div class="friend-requests">
+                <!-- Friend requests will be dynamically added here -->
+            </div>
+        </section>
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <div class="notifications-list">
+                <!-- Notifications will be dynamically added here -->
+            </div>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Manage your privacy settings here.</p>
+            <button id="privacySettingsBtn">Update Privacy Settings</button>
+            <button id="changePasswordBtn">Change Password</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
